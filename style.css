@@ -29,30 +29,40 @@ body {
 
 .register-btn {
     position: absolute;
-    bottom: 10%;
-    left: 30%;
-    background-color: #1e88e5;
+    bottom: 22%;
+    left: 35%;
+    background: linear-gradient(135deg, #1e88e5, #42a5f5);
     color: white;
-    font-size: 1.13rem;
+    font-size: 1.2rem;
     font-weight: bold;
-    padding: 11.3px 30px;
-    border: none;
-    border-radius: 37px;
+    padding: 15px 35px;
+    border: 3px solid #fff;
+    border-radius: 50px;
     cursor: pointer;
-    box-shadow: 0 3px 11.3px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 20px rgba(30, 136, 229, 0.5), 0 0 30px rgba(66, 165, 245, 0.3);
     transition: all 0.3s ease;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
+    letter-spacing: 2px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 8px 20px rgba(30, 136, 229, 0.5), 0 0 30px rgba(66, 165, 245, 0.3);
+    }
+    50% {
+        box-shadow: 0 8px 25px rgba(30, 136, 229, 0.7), 0 0 40px rgba(66, 165, 245, 0.5);
+    }
 }
 
 .register-btn:hover {
-    background-color: #1565c0;
-    transform: scale(1.05);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(135deg, #42a5f5, #1e88e5);
+    transform: scale(1.1);
+    box-shadow: 0 10px 30px rgba(30, 136, 229, 0.7), 0 0 50px rgba(66, 165, 245, 0.6);
 }
 
 .register-btn:active {
-    transform: scale(0.98);
+    transform: scale(1.05);
 }
 
 @media (max-width: 768px) {
@@ -69,23 +79,23 @@ body {
     }
 
     .register-btn {
-        font-size: 0.75rem;
-        padding: 7.5px 18.7px;
-        bottom: 12%;
+        font-size: 0.8rem;
+        padding: 10px 20px;
+        bottom: 18%;
         left: 50%;
         transform: translateX(-50%);
-        letter-spacing: 0.75px;
+        letter-spacing: 1px;
     }
 
     .register-btn:hover {
-        transform: translateX(-50%) scale(1.05);
+        transform: translateX(-50%) scale(1.1);
     }
 }
 
 @media (max-width: 480px) {
     .register-btn {
-        font-size: 0.67rem;
-        padding: 6px 15px;
-        bottom: 8%;
+        font-size: 0.7rem;
+        padding: 8px 18px;
+        bottom: 15%;
     }
 }

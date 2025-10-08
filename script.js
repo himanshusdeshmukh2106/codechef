@@ -2,9 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const registerBtn = document.getElementById('registerBtn');
     
     registerBtn.addEventListener('click', function() {
-        alert('Registration form will open here!');
-        // You can add your registration logic here
-        // For example: window.location.href = 'registration-page.html';
+        window.open('https://forms.gle/hNsLQmbMhdpNnS2h6', '_blank');
     });
     
     registerBtn.addEventListener('mouseenter', function() {

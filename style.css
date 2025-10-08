@@ -29,20 +29,20 @@ body {
 
 .register-btn {
     position: absolute;
-    bottom: 5%;
+    bottom: 10%;
     left: 30%;
     background-color: #1e88e5;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.13rem;
     font-weight: bold;
-    padding: 15px 40px;
+    padding: 11.3px 30px;
     border: none;
-    border-radius: 50px;
+    border-radius: 37px;
     cursor: pointer;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3px 11.3px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
 }
 
 .register-btn:hover {
@@ -56,10 +56,36 @@ body {
 }
 
 @media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .poster-container {
+        width: 100%;
+    }
+
+    .poster-image {
+        max-width: 100%;
+    }
+
     .register-btn {
-        font-size: 1rem;
-        padding: 10px 25px;
-        bottom: 20%;
-        left: 18%;
+        font-size: 0.75rem;
+        padding: 7.5px 18.7px;
+        bottom: 12%;
+        left: 50%;
+        transform: translateX(-50%);
+        letter-spacing: 0.75px;
+    }
+
+    .register-btn:hover {
+        transform: translateX(-50%) scale(1.05);
+    }
+}
+
+@media (max-width: 480px) {
+    .register-btn {
+        font-size: 0.67rem;
+        padding: 6px 15px;
+        bottom: 8%;
     }
 }
